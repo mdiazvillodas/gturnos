@@ -1,0 +1,291 @@
+body{
+	margin:0 auto;
+	width:100%;
+	font-family: 'open sans', 'segoe ui','arial';
+	font-size:13px;
+	overflow-x:hidden;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.nav-bar {
+    background: #2C3E50;
+    border: 0 none;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+    min-height: 45px;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+}
+
+.l-bar:before{
+    background-color: #34495E;
+    border-color: #CCCCCC;
+    border-image: none;
+    border-style: solid;
+    border-width: 0 1px 0 0;
+    bottom: 0;
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 189px;
+    z-index: -1;
+	transition: all 500ms;
+}
+
+.l-bar{
+    background-color: #34495E;
+    border-color: #CCCCCC;
+    border-image: none;
+    border-style: solid;
+    border-width: 0 1px 0 0;
+    float: left;
+    left:0;
+    position: relative;
+    width: 190px;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	transition: all 500ms;
+}
+
+.l-bar .item{
+    background: none repeat scroll 0 0 #34495E;
+    border-bottom: 1px solid #142638;
+    border-top: 1px solid #54677A;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    text-align: center;
+}
+
+.l-bar .item .a:hover:before{
+	background-color:#3d566e;
+	bottom:0;
+	content:"";
+	display:block;
+	left:0;
+	max-width:3px;
+	overflow:hidden;
+	position:absolute;
+	top:-1px;
+	width:3px;
+}
+
+.l-bar .item .a{
+    background-color: transparent;
+    color: #FFFFFF;
+    display: block;
+    font-size: 13px;
+    height: 38px;
+    line-height: 36px;
+    padding: 0 16px 0 7px;
+    text-decoration: none;
+    text-shadow: none !important;
+}
+
+.l-bar .item .a i{
+    float: left;
+    font-size: 25px;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    width: 37px;
+}
+
+.l-bar .item:hover{
+	background:#3D566E;
+	color:blue;
+}
+
+.menu-item{
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+}
+
+.l-bar .item .menu-item {
+    float: left;
+    margin-left: 15px;
+}
+
+
+.nav-list > li > a {
+    background-color: #F9F9F9;
+    color: #585858;
+    display: block;
+    font-size: 13px;
+    height: 38px;
+    line-height: 36px;
+    padding: 0 16px 0 7px;
+    text-decoration: none;
+    text-shadow: none !important;
+}
+
+.nav-list:before, .nav-list:after {
+    content: " ";
+    display: table;
+}
+
+
+
+.nav-list{
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-content {
+    margin-left: 190px;
+    margin-right: 0;
+    margin-top: 0;
+    min-height: 100%;
+    padding: 0;
+    transition: all 500ms ease 0s;
+}
+
+
+/*Grilla de dias standard*/
+
+.calendar{
+	float: left;
+	margin: 1%;
+	width: 98%;
+}
+
+.calendar .header {
+    background: none repeat scroll 0 0 #34495E;
+    color: #FFFFFF;
+    float: left;
+    font-size: 15px;
+    width: 100%;
+}
+
+
+.calendar .controles {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #34495E;
+    color: #34495E;
+    float: left;
+    font-size: 15px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.calendar .header .dia{
+	width:100%;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	float: left;
+}
+
+.calendar .body{
+	float: left;
+	width: 100%;
+}
+
+.col{
+	width: 16%;
+	float: left;
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    margin-left:-1px;
+    }
+
+.col.first{
+	width: 5%;
+}
+
+.header .col.first .dia span{
+	font-size: 14px;
+	line-height: 30px;
+	color: white;
+}
+
+.col.first .dia span{
+	line-height: 70px;
+	font-size: 16px;
+	text-align: right;
+	color: #444;
+}
+
+.calendar .body .col .dia{
+	float: left;
+	width:100%;
+	height: 70px;
+	cursor: pointer;
+	text-align: center;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.calendar .body .col .dia .dia-top{
+	float: left;
+	height: 24px;
+	width: 100%;
+	color: #eee;
+}
+
+.calendar .body .col .dia .dia-top i{
+	height: 24px;
+	line-height: 24px;
+}
+
+.calendar .body .col .dia .dia-top .bloq, .calendar .body .col .dia .dia-top .cancel{
+	float: right;
+	width: 25px;
+	height: 25px;
+	transition: all 250ms;
+}
+
+.bloq:hover{
+	color: #2980B9;
+	background: white;
+}
+
+.bloq{
+	background: #2980B9;
+	color: white;
+}
+
+.cancel:hover{
+	color: #16A085;
+	background: #eee;
+}
+
+.cancel{
+	background: #16A085;
+	color: #eee;
+}
+
+
+.calendar .body .col .dia .dia-top span{
+	float: left;
+	width: 100%;
+}
+
+.free{
+	background: none repeat scroll 0 0 #DFF2D2;
+	transition: all 200ms;
+}
+
+.taken{
+	background: none repeat scroll 0 0 #FFE8E5;
+}
+
+.free:hover{
+	background: #fff;
+}
+
+.blocked{
+	background: none repeat scroll 0 0 #eee;
+}
